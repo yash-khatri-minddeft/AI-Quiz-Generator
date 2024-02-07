@@ -16,7 +16,7 @@ export async function POST(req, res) {
   }
 
   const compo = await openai.createCompletion({
-    model: "gpt-3.5-turbo",
+    model: "gpt-3.5-turbo-16k-0613",
     messages: [{ role: "user", content: prompt }],
     temperature: 1, // 0 - 2
     // top_p: 1,
